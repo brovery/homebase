@@ -5,6 +5,7 @@
     <title>Home Base</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
 
     <!-- 1. Load libraries -->
@@ -17,13 +18,19 @@
 
     <!-- 2. Configure SystemJS -->
     <script src="systemjs.config.js"></script>
+
+    <!-- 3. Load ng2-bootstrap JS. -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ng2-bootstrap/1.1.5/ng2-bootstrap.min.js"></script>
+
     <script>
         System.import('app').catch(function (err) { console.error(err); });
     </script>
 </head>
 
-<!-- 3. Display the application -->
+<!-- 4. Display the application -->
 <body>
-<my-app>Loading...</my-app>
+<div class="container">
+    <my-app class="container">Loading...</my-app>
+</div>
 </body>
 </html>
