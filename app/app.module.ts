@@ -12,6 +12,7 @@ import {BudgetComponent} from "./budget/budget.component";
 import {CalendarComponent} from "./calendar/calendar.component";
 import {MealplannerComponent} from "./mealPlanner/mealPlanner.component";
 import {ShoppinglistComponent} from "./shoppingList/shoppingList.component";
+import {DataService} from "./data/data.service";
 
 @NgModule({
     imports: [
@@ -19,7 +20,6 @@ import {ShoppinglistComponent} from "./shoppingList/shoppingList.component";
         FormsModule,
         routing
     ],
-    providers: [],
     declarations: [
         AppComponent,
         ExerciseComponent,
@@ -30,6 +30,9 @@ import {ShoppinglistComponent} from "./shoppingList/shoppingList.component";
         CalendarComponent,
         MealplannerComponent,
         ShoppinglistComponent
+    ],
+    providers: [
+        DataService
     ],
     bootstrap: [ AppComponent ]
 })

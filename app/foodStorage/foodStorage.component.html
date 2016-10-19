@@ -1,1 +1,10 @@
-Food Storage HTML
+<div class="container">
+    <h3>Food Storage</h3>
+    <div class="bordered">
+        <ul>
+            <li *ngFor="let foodStorage of storedFood">
+                <span>{{foodStorage.name}}</span>
+            </li>
+        </ul>
+    </div>
+</div>
